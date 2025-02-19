@@ -62,6 +62,3 @@ The following insights were provided in the issue discussions:
 Feel free to:
 - Open an **issue** for improvements.
 - Submit a **pull request** for additional analyses or dataset extensions.
-
-🚀
-```
