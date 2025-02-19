@@ -29,6 +29,9 @@ Open `Chapter1_Unsupervised_Learning_Methods.ipynb` and execute the cells.
    ```
 2. Open the notebook and run the cells in order to explore different unsupervised learning techniques.
 
+## 📝 Comments
+Current comments related to this project can be found [here](https://github.com/caiiiiy/colabwk4/issues/1).
+
 ## 📊 Dependencies
 This notebook requires the following Python libraries:
 - `numpy`
