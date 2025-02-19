@@ -1,19 +1,23 @@
-Here are some comments when annotating these graphs:
+Here are GitHub comments for each graph without direct comparison:
 
 ---
 
-### **GMM Clustering Graph**
-1. **Observation:** The GMM clustering appears to capture more detailed variations in the image, particularly in the lower-right region.
-2. **Possible Concern:** The cluster transition seems smoother, but there might be some uncertainty in how clusters are assigned.
-3. **Suggestion:** If the goal is to preserve finer details, GMM seems to work better, but it might be useful to check if the model is correctly converging.
+### **K-means Clustering on Sentinel-2 Bands (First Graph)**
+- **Observation:** This graph represents the result of **K-means clustering** applied to Sentinel-2 satellite bands.
+- **Clustering Behavior:** The clusters appear to segment the image into distinct regions with clear boundaries.
+- **Cluster Labeling:** The color bar indicates how different cluster labels have been assigned, with three dominant cluster regions.
+- **Interpretation:** The method captures high-contrast areas but might be influenced by the predefined number of clusters.
+- **Potential Improvements:** Adjusting the number of clusters, refining feature selection, or incorporating additional spectral bands may improve segmentation accuracy.
 
 ---
 
-### **K-means Clustering Graph**
-1. **Observation:** The K-means clustering results in more distinct and rigid segmentation, with fewer gradient-like transitions.
-2. **Possible Concern:** The segmentation might be overly simplistic, failing to capture fine details in some regions.
-3. **Suggestion:** Increasing the number of clusters or trying alternative distance metrics might improve the segmentation.
+### **GMM Clustering on Sentinel-2 Bands (Second Graph)**
+- **Observation:** This graph shows the result of applying **Gaussian Mixture Model (GMM) clustering** to Sentinel-2 satellite data.
+- **Clustering Behavior:** The clustering output shows a more gradual transition between regions, indicating a probabilistic classification.
+- **Cluster Labeling:** The cluster label values suggest a continuous assignment rather than strict segmentation.
+- **Interpretation:** GMM captures subtle variations in pixel intensities, which may be useful for detecting gradual land cover transitions.
+- **Potential Improvements:** Testing different covariance structures or tuning the number of Gaussian components could refine the clustering results.
 
 ---
 
-
+These comments can be added to the GitHub repository as inline annotations or as part of a discussion in the issue or pull request section. Let me know if you need modifications! 🚀
