@@ -45,6 +45,10 @@ Make sure to install them before running the notebook.
 ## 📜 License
 This project is licensed under the MIT License - see the `LICENSE` file for details.
 
+## 🏷️ References
+Bishop, C. M. (2006). Pattern Recognition and Machine Learning.
+MacQueen, J. (1967). Some Methods for Classification and Analysis of Multivariate Observations.
+
 ## 🤝 Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
