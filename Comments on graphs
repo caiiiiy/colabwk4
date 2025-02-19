@@ -1,1 +1,19 @@
+Here are some comments when annotating these graphs:
+
+---
+
+### **GMM Clustering Graph**
+1. **Observation:** The GMM clustering appears to capture more detailed variations in the image, particularly in the lower-right region.
+2. **Possible Concern:** The cluster transition seems smoother, but there might be some uncertainty in how clusters are assigned.
+3. **Suggestion:** If the goal is to preserve finer details, GMM seems to work better, but it might be useful to check if the model is correctly converging.
+
+---
+
+### **K-means Clustering Graph**
+1. **Observation:** The K-means clustering results in more distinct and rigid segmentation, with fewer gradient-like transitions.
+2. **Possible Concern:** The segmentation might be overly simplistic, failing to capture fine details in some regions.
+3. **Suggestion:** Increasing the number of clusters or trying alternative distance metrics might improve the segmentation.
+
+---
+
 
