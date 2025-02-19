@@ -1,23 +1,5 @@
-Here are GitHub comments for each graph without direct comparison:
 
----
-
-### **K-means Clustering on Sentinel-2 Bands (First Graph)**
-- **Observation:** This graph represents the result of **K-means clustering** applied to Sentinel-2 satellite bands.
-- **Clustering Behavior:** The clusters appear to segment the image into distinct regions with clear boundaries.
-- **Cluster Labeling:** The color bar indicates how different cluster labels have been assigned, with three dominant cluster regions.
-- **Interpretation:** The method captures high-contrast areas but might be influenced by the predefined number of clusters.
-- **Potential Improvements:** Adjusting the number of clusters, refining feature selection, or incorporating additional spectral bands may improve segmentation accuracy.
-
----
-
-### **GMM Clustering on Sentinel-2 Bands (Second Graph)**
-- **Observation:** This graph shows the result of applying **Gaussian Mixture Model (GMM) clustering** to Sentinel-2 satellite data.
-- **Clustering Behavior:** The clustering output shows a more gradual transition between regions, indicating a probabilistic classification.
-- **Cluster Labeling:** The cluster label values suggest a continuous assignment rather than strict segmentation.
-- **Interpretation:** GMM captures subtle variations in pixel intensities, which may be useful for detecting gradual land cover transitions.
-- **Potential Improvements:** Testing different covariance structures or tuning the number of Gaussian components could refine the clustering results.
-
----
-
+The image is segmented into three main clusters, with distinct boundaries between them.
+The color scale represents different cluster assignments, ranging from dark purple (-1) to yellow (1).
+The clustering appears to group pixels based on spectral similarities, with a large homogeneous region and smaller distinct areas.
 
