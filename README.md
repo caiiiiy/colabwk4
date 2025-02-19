@@ -1,58 +1,67 @@
-# Chapter 1: Unsupervised Learning Methods
+# 🚀 Unsupervised Learning for Earth Observation Data
 
-This repository contains a Jupyter Notebook that explores various **unsupervised learning methods**. The notebook provides theoretical explanations, practical implementations, and visualizations to help users understand clustering, dimensionality reduction, and other unsupervised techniques.
+## 📌 Overview
+This repository contains Jupyter Notebooks demonstrating **unsupervised learning techniques** applied to **Earth Observation (EO) data**. The main focus is on clustering algorithms such as **K-means** to classify **sea ice and leads** using **Sentinel-2 optical data** and **Sentinel-3 altimetry data**.
 
-## 📌 Features
-- Introduction to unsupervised learning
-- Implementation of clustering algorithms (e.g., K-Means, DBSCAN, Hierarchical Clustering)
-- Dimensionality reduction techniques (e.g., PCA, t-SNE)
-- Data visualization and analysis
+## 📂 Files in this Repository
+- **`Chapter1_Unsupervised_Learning_Methods.ipynb`**  
+  - Introduces **unsupervised learning methods**, specifically **K-means clustering**.
+  - Covers classification of **sea ice vs. lead** using **Sentinel-2 and Sentinel-3 data**.
 
-## 📂 Installation & Setup
-To run this notebook, ensure you have Python installed along with Jupyter Notebook and the required libraries. You can install them using:
+- **`colab1.ipynb`**  
+  - This notebook performs **data processing, clustering, and visualization** using satellite data.
+  - Uses **Google Colab** for execution, requiring **Google Drive access** for dataset storage.
+  - Outputs **clustering results** with color-coded scatter plots and waveform alignments.
 
-```bash
-pip install jupyter numpy pandas scikit-learn matplotlib seaborn
-```
-
-Then, launch Jupyter Notebook:
-```bash
-jupyter notebook
-```
-Open `Chapter1_Unsupervised_Learning_Methods.ipynb` and execute the cells.
-
-## 🚀 Usage
-1. Clone this repository:
+## 🛠️ How to Use the Notebooks
+1. **Clone this repository**:
    ```bash
-   git clone https://github.com/your-username/unsupervised-learning.git
-   cd unsupervised-learning
+   git clone https://github.com/caiiiiy/colabwk4.git
    ```
-2. Open the notebook and run the cells in order to explore different unsupervised learning techniques.
+2. **Install dependencies**:
+   ```bash
+   pip install rasterio netCDF4
+   ```
+3. **Open and run the notebooks**:
+   - In **Google Colab**, upload the notebook and run the cells step by step.
+   - In **Jupyter Notebook**, open locally and execute.
 
-## 📝 Comments
-Current comments related to this project can be found [here](https://github.com/caiiiiy/colabwk4/issues/1).
+## 📊 Key Features
+### 📌 Unsupervised Learning Concepts
+- **K-means clustering**: Explained with practical implementation.
+- **Cluster evaluation**: Using metrics to assess segmentation quality.
+- **Satellite data processing**: Handling **Sentinel-2 and Sentinel-3** datasets.
 
-## 📊 Dependencies
-This notebook requires the following Python libraries:
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
+### 🎨 Visualizations & Analysis
+- **Scatter Plots of Clustered Data**:  
+  - Different colors represent **clusters**.
+  - Plots of (`sig_0` vs. `PP`), (`sig_0` vs. `SSD`), and (`PP` vs. `SSD`).
+  
+- **Waveform Alignment Using Cross-Correlation**:  
+  - Aligns **10 equally spaced waveforms** using **cross-correlation**.
+  - Helps identify common features across different clusters.
 
-Make sure to install them before running the notebook.
+- **Histogram Analysis**:  
+  - Echo distributions for **lead clusters** and **sea ice clusters**.
+  - Reveals variability in **echo intensities**.
 
-## 📜 License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+## 🔍 Annotations from [Issue #1](https://github.com/caiiiiy/colabwk4/issues/1)
+The following insights were provided in the issue discussions:
+- **Clustering Results**: Evaluated using both **Gaussian Mixture Model (GMM)** and **K-means**.
+- **Feature Selection**: `sig_0`, `PP`, and `SSD` were used for classification.
+- **Performance Comparison**: K-means provides **rigid segmentation**, while GMM captures **subtle variations**.
+- **Recommended Improvements**:
+  - Normalize spectral features for better cluster separation.
+  - Optimize GMM covariance types for smoother clustering.
+  - Validate clustering quality using **silhouette scores**.
 
-## 🏷️ References
-Bishop, C. M. (2006). Pattern Recognition and Machine Learning.
-MacQueen, J. (1967). Some Methods for Classification and Analysis of Multivariate Observations.
+## 🏆 References
+- **GEOL0069 Jupyter book**. *[https://cpomucl.github.io/GEOL0069-AI4EO/intro.html]*.
 
-## 🤝 Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+## 🤝 Contributions
+Feel free to:
+- Open an **issue** for improvements.
+- Submit a **pull request** for additional analyses or dataset extensions.
 
----
-
-📝 **Author:** [Du Liu]  
-📧 **Contact:** zcfbdli@ucl.ac.uk
+🚀
+```
