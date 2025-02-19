@@ -1,6 +1,6 @@
 # Chapter 1: Unsupervised Learning Methods
 
-This repository contains a Jupyter Notebook that explores various **unsupervised learning methods**. The notebook provides theoretical explanations, practical implementations, and visualizations to help users understand clustering, dimensionality reduction, and other unsupervised techniques.
+This repository contains a Jupyter Notebook [![Jupyter Book Badge](docs/images/badge.svg)](https://jupyterbook.org) that explores various **unsupervised learning methods**. The notebook provides theoretical explanations, practical implementations, and visualizations to help users understand clustering, dimensionality reduction, and other unsupervised techniques.
 
 ## 📌 Features
 - Introduction to unsupervised learning
